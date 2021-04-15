@@ -324,8 +324,8 @@ def decompile_cfr(decompiled_version, version, side, quiet):
         path = path.resolve()
         cfr = cfr.resolve()
         subprocess.run(['java',
-                        '-Xmx2G',
-                        '-Xms1G',
+                        '-Xmx7G',
+                        '-Xms5G',
                         '-jar', cfr.__str__(),
                         path.__str__(),
                         '--outputdir', f'./src/{decompiled_version}/{side}',
