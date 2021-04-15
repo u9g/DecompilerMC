@@ -587,7 +587,7 @@ def main():
         if not args.quiet:
             print("===FINISHED===")
             print(f"output is in /src/{version}")
-#             input("Press Enter key to exit")
+            input("Press Enter key to exit")
         sys.exit(0)
 
     if use_flags:
